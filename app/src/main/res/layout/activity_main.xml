@@ -194,6 +194,7 @@
     </LinearLayout>
   </ScrollView>
 <com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@id/app_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:backgroundTint="@color/blancox"
@@ -203,4 +204,14 @@
     android:loyout_gravity="bottom">
 
 </com.google.android.material.bottomappbar.BottomAppBar>
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/orange"
+    android:elevation="3dp"
+    android:src="@drawable/shopping_cart"
+    app:backgroundTint="@color/orange"
+    app:layout_anchor="@id/app_bar"
+    >
+
 </androidx.constraintlayout.widget.ConstraintLayout>
