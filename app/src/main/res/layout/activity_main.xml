@@ -193,5 +193,9 @@
 
     </LinearLayout>
   </ScrollView>
-
+<com.google.android.material.bottomappbar.BottomAppBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/blancox"
+    android:loyout_gravity="bottom"
 </androidx.constraintlayout.widget.ConstraintLayout>
