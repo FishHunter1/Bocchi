@@ -193,25 +193,28 @@
 
     </LinearLayout>
   </ScrollView>
-<com.google.android.material.bottomappbar.BottomAppBar
-    android:id="@id/app_bar"
+  <androidx.coordinatorLayout.widget.CoordinatorLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:backgroundTint="@color/blancox"
-    app:fabCradleMargin="8dp"
-    app:fabCradleRoundedCornerRadius="50dp"
-    app:fabCradleVerticalOffset="6dp"
-    android:loyout_gravity="bottom">
+    android:layout_height="100dp">
+    <com.google.android.material.bottomappbar.BottomAppBar
+      android:id="@id/app_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/blancox"
+      app:fabCradleMargin="8dp"
+      app:fabCradleRoundedCornerRadius="50dp"
+      app:fabCradleVerticalOffset="6dp"
+      android:loyout_gravity="bottom">
 
-</com.google.android.material.bottomappbar.BottomAppBar>
-  <com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:backgroundTint="@color/orange"
-    android:elevation="3dp"
-    android:src="@drawable/shopping_cart"
-    app:backgroundTint="@color/orange"
-    app:layout_anchor="@id/app_bar"
-    >
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/orange"
+      android:elevation="3dp"
+      android:src="@drawable/shopping_cart"
+      app:backgroundTint="@color/orange"
+      app:layout_anchor="@id/app_bar">
+  </androidx.coordinatorLayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
