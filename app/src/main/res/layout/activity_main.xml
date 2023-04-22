@@ -7,6 +7,7 @@
   tools:context=".MainActivity">
 
   <ScrollView
+    android:id="@+id/scrollview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -31,8 +32,8 @@
           android:layout_marginTop="32dp"
           android:text="Welcome Fish"
           android:textColor="@color/red"
-          android:textStyle="bold"
           android:textSize="20sp"
+          android:textStyle="bold"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent" />
 
@@ -193,18 +194,20 @@
 
     </LinearLayout>
   </ScrollView>
-  <androidx.coordinatorLayout.widget.CoordinatorLayout
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    app:layout_constraintBottom_toBottomOf="@id/scrollview"
+    app:layout_constraintEnd_toEndOf="parent">
     <com.google.android.material.bottomappbar.BottomAppBar
-      android:id="@id/app_bar"
+      android:id="@+id/app_bar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:backgroundTint="@color/blancox"
       app:fabCradleMargin="8dp"
       app:fabCradleRoundedCornerRadius="50dp"
       app:fabCradleVerticalOffset="6dp"
-      android:loyout_gravity="bottom">
+      android:layout_gravity="bottom">
 
     </com.google.android.material.bottomappbar.BottomAppBar>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -215,6 +218,6 @@
       android:src="@drawable/shopping_cart"
       app:backgroundTint="@color/orange"
       app:layout_anchor="@id/app_bar">
-  </androidx.coordinatorLayout.widget.CoordinatorLayout>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
