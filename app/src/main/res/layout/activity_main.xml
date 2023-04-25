@@ -7,7 +7,7 @@
   tools:context=".MainActivity">
 
   <ScrollView
-    android:id="@+id/scrollview"
+    android:id="@+id/ichinisan"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -241,7 +241,7 @@
   <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    app:layout_constraintBaseline_toBottomOf="@id/scrollview"
+    app:layout_constraintBaseline_toBottomOf="@id/ichinisan"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintEnd_toStartOf="parent">
 
