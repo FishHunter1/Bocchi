@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.bocchi.Proyecto.Adaptador.CategoryAdaptador;
 import com.example.bocchi.Proyecto.Domain.CategoryDomain;
 import com.example.bocchi.R;
 
@@ -35,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
             category.add(new CategoryDomain("Hotdog","cat_3"));
             category.add(new CategoryDomain("Drink","cat_4"));
             category.add(new CategoryDomain("Donut","cat_5"));
+
+            adapter=new CategoryAdaptador(category);
+            recyclerViewCategoryList.setAdapter(adapter);
+
         }
 }
