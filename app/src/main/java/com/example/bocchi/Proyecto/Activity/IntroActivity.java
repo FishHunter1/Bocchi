@@ -1,4 +1,4 @@
-package com.example.bocchi;
+package com.example.bocchi.Proyecto.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -6,6 +6,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.bocchi.R;
 
 public class IntroActivity extends AppCompatActivity {
 private ConstraintLayout startBtn;
@@ -18,7 +20,7 @@ private ConstraintLayout startBtn;
         startBtn.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
-            startActivity(new Intent(IntroActivity.this,MainActivity.class));
+            startActivity(new Intent(IntroActivity.this, MainActivity.class));
           }
         });
     }

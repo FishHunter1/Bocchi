@@ -5,7 +5,7 @@
   android:id="@+id/st"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content"
-  tools:context=".IntroActivity">
+  tools:context=".Proyecto.Activity.IntroActivity">
 
   <ImageView
       android:id="@+id/imageView"
