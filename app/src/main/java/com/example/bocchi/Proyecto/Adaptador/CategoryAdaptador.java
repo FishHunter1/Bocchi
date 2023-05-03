@@ -71,7 +71,6 @@ public class CategoryAdaptador extends RecyclerView.Adapter<CategoryAdaptador.Vi
 
     @Override
     public int getItemCount() {
-
         return categoryDomains.size();
     }
 
