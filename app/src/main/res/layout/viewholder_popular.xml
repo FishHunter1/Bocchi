@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_background"
+    android:elevation="3dp">
 
     <TextView
         android:id="@+id/title"
@@ -21,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -39,9 +42,9 @@
         android:textColor="@color/aeiou"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintEnd_toEndOf="@+id/pic"
+        app:layout_constraintStart_toStartOf="@+id/pic"
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
 
     <TextView
         android:id="@+id/textView12"
@@ -69,7 +72,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/pic"
+        app:layout_constraintStart_toStartOf="@+id/pic"
         app:layout_constraintTop_toBottomOf="@+id/fee" />
 </androidx.constraintlayout.widget.ConstraintLayout>
