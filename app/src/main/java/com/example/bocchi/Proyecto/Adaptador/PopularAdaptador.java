@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class PopularAdaptador extends RecyclerView.Adapter<PopularAdaptador.ViewHolder> {
     ArrayList<FoodDomain> PopularFood;
 
-    public PopularAdaptador(ArrayList<CategoryDomain> categoryDomains) {
+    public PopularAdaptador(ArrayList<FoodDomain> categoryDomains) {
         this.PopularFood = PopularFood;
     }
 
