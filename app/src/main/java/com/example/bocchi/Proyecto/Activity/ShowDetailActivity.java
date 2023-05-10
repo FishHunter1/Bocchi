@@ -71,10 +71,11 @@ public class ShowDetailActivity extends AppCompatActivity {
     private void initView(){
         addToCarBtn = findViewById(R.id.addToCarBtn);
         titleTxt = findViewById(R.id.titleTxt);
-        feeTxt = findViewById(R.id.fee);
+        feeTxt = findViewById(R.id.PriceTxt);
         descriptionTxt = findViewById(R.id.descriptionTxt);
         numberOrderTxt = findViewById(R.id.numberOrderTxt);
         plusBtn = findViewById(R.id.plusBtn);
         minusBtn = findViewById(R.id.minusBtn);
+        picFood=findViewById(R.id.picfood);
     }
 }
