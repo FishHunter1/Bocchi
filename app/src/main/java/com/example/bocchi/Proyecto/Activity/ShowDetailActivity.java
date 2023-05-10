@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.bocchi.Proyecto.Domain.FoodDomain;
+import com.example.bocchi.Proyecto.Helper.ManagementCart;
 import com.example.bocchi.R;
 
 public class ShowDetailActivity extends AppCompatActivity {
@@ -16,12 +18,15 @@ public class ShowDetailActivity extends AppCompatActivity {
     private TextView titleTxt,feeTxt,descriptionTxt,numberOrderTxt;
     private ImageView plusBtn,minusBtn,picFood;
     private FoodDomain object;
-    int numberOrder=1;
+    int numberOrder = 1;
+    private ManagementCart managementCart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_detail);
 
+        managementCart = new ManagementCart(this);
         initView();
         getBundle();
     }
@@ -54,15 +59,23 @@ public class ShowDetailActivity extends AppCompatActivity {
                 }
             }
         });
+        addToCarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                object.setNumberInCart(numberOrder);
+                managementCart.insertFood(object);
+            }
+        });
     }
 
     private void initView(){
         addToCarBtn = findViewById(R.id.addToCarBtn);
         titleTxt = findViewById(R.id.titleTxt);
-        feeTxt = findViewById(R.id.fee);
+        feeTxt = findViewById(R.id.PriceTxt);
         descriptionTxt = findViewById(R.id.descriptionTxt);
         numberOrderTxt = findViewById(R.id.numberOrderTxt);
         plusBtn = findViewById(R.id.plusBtn);
         minusBtn = findViewById(R.id.minusBtn);
+        picFood=findViewById(R.id.picfood);
     }
 }
