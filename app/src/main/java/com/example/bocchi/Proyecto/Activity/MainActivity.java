@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void recyclerViewCategoryList(){
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-            recyclerViewCategoryList=findViewById(R.id.recyclerView);
+            recyclerViewCategoryList=findViewById(R.id.recyclerView2);
             recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
             ArrayList<CategoryDomain> category=new ArrayList<>();
