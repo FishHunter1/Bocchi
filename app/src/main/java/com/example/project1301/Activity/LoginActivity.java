@@ -10,6 +10,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -24,8 +25,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-  Button btn_login,btn_registrar,btn_recuperar;
+  Button btn_login,btn_registrar;
   EditText et_mail,et_pass;
+
+  TextView btn_recuperar;
 
   AwesomeValidation awesomeValidation;
   FirebaseAuth firebaseAuth;
@@ -39,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         et_mail = findViewById(R.id.et_mail);
         et_pass = findViewById(R.id.et_pass);
 
-        btn_login = findViewById(R.id.btn_registrar);
+        btn_login = findViewById(R.id.btn_login);
         btn_recuperar = findViewById(R.id.btn_recuperar);
         btn_registrar = findViewById(R.id.btn_registrar);
 

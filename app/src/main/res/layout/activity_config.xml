@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Login"
+            android:text="Ajustes"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -42,7 +42,7 @@
             android:id="@+id/emailfint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-mail"
+            android:text="Dirección de Envío"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -53,53 +53,10 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
-            android:hint="Ingresa tu dirección de e-mail"
+            android:hint="Escribe tu dirección"
             android:inputType="textPersonName"
             android:padding="16dp"
             android:textColor="#5c5f72"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/passfint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Contraseña"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/et_pass"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword"
-            android:padding="16dp"
-            android:textColor="#5c5f72"
-            android:textSize="16sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
-            style="@android:style/Widget.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/green_button_background"
-            android:text="Ingresar"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/btn_recuperar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Olvidé mi contraseña"
-            android:textAlignment="center"
             android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -109,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:background="@drawable/green_button_background"
-            android:text="Crear una cuenta"
+            android:text="Guardar"
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
