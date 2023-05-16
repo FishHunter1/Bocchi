@@ -29,7 +29,7 @@ public class ConfigActivity extends AppCompatActivity {
         if (et_direccion.getText().toString().equals("")){
           Toast.makeText(ConfigActivity.this, "Ingresa tu direccion", Toast.LENGTH_SHORT).show();
         } else{
-          Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
+          startActivity(new Intent(ConfigActivity.this,MainActivity.class));
         }
       }
     });
