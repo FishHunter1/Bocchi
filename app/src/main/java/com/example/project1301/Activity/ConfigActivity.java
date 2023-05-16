@@ -28,6 +28,8 @@ public class ConfigActivity extends AppCompatActivity {
     et_direccion=findViewById(R.id.et_direccion);
     et_direccion2=findViewById(R.id.et_direccion2);
 
+    et_direccion2=et_direccion;
+
     btn_guardar.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
