@@ -12,34 +12,21 @@ import android.widget.Toast;
 import com.example.project1301.R;
 
 public class LoginActivity extends AppCompatActivity {
-    private EditText userEdt, passEdt;
-    private Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        initView();
-        setVariable();
+        //setup
+        setup();
     }
+    private void setup(){
+      title="autenticacion"
 
-    private void setVariable() {
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (userEdt.getText().toString().isEmpty() && passEdt.getText().toString().isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Porfavor rellena el formulario para logear", Toast.LENGTH_SHORT).show();
-                } else if (userEdt.getText().toString().equals("admin") && passEdt.getText().toString().equals("admin")) {
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                }
-            }
-        });
-    }
+      singUpButton.setOnClickListener{
+        if (emailEdit)
+      }
 
-    private void initView() {
-        userEdt = findViewById(R.id.editTextTextPersonName);
-        passEdt = findViewById(R.id.editTextTextPassword);
-        loginBtn = findViewById(R.id.loginBtn);
     }
 }
