@@ -74,21 +74,6 @@
         android:textColor="#5c5f72"
         android:textSize="16sp" />
 
-      <EditText
-        android:id="@+id/et_direccion2"
-        android:layout_width="79dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/edittext_background"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        android:textColor="#5c5f72"
-        android:textSize="16sp"
-        android:visibility="gone" />
-
       <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_guardar"
             style="@android:style/Widget.Button"

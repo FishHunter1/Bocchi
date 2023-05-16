@@ -17,7 +17,6 @@ public class ConfigActivity extends AppCompatActivity {
   public EditText et_direccion;
   public Button btn_guardar;
 
-  public TextView et_direccion2;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +26,6 @@ public class ConfigActivity extends AppCompatActivity {
     btn_guardar=findViewById(R.id.btn_guardar);
     et_direccion=findViewById(R.id.et_direccion);
 
-    et_direccion2=et_direccion;
-
     btn_guardar.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -37,10 +34,7 @@ public class ConfigActivity extends AppCompatActivity {
         } else{
           Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
           intent.putExtra("et_direccion",et_direccion.getText().toString());
-          Intent i =new Intent(ConfigActivity.this,CartActivity.class);
-          i.putExtra("et_direccion2",et_direccion2.getText().toString());
 
-          startActivity(i);
           startActivity(intent);
         }
       }
