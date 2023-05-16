@@ -61,21 +61,21 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/et_mail"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Escribe tu dirección"
-            android:inputType="textPersonName"
-            android:padding="16dp"
-            android:textColor="#5c5f72"
-            android:textSize="16sp" />
+      <EditText
+        android:id="@+id/et_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Escribe tu dirección"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#5c5f72"
+        android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_registrar"
+      <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_guardar"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

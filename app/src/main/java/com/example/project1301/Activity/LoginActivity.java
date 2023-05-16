@@ -39,12 +39,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        et_mail = findViewById(R.id.et_mail);
+        et_mail = findViewById(R.id.et_direccion);
         et_pass = findViewById(R.id.et_pass);
 
         btn_login = findViewById(R.id.btn_login);
         btn_recuperar = findViewById(R.id.btn_recuperar);
-        btn_registrar = findViewById(R.id.btn_registrar);
+        btn_registrar = findViewById(R.id.btn_guardar);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
-        awesomeValidation.addValidation(this,R.id.et_mail, Patterns.EMAIL_ADDRESS,R.string.invalid_mail);
+        awesomeValidation.addValidation(this,R.id.et_direccion, Patterns.EMAIL_ADDRESS,R.string.invalid_mail);
         awesomeValidation.addValidation(this,R.id.et_pass,".{6,}", R.string.invalid_password);
 
         btn_registrar.setOnClickListener(new View.OnClickListener() {

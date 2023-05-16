@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.project1301.Adapter.FoodListAdapter;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapterFoodList;
     private RecyclerView recyclerViewFood;
 
+    private TextView direccion;
     private ImageView btn_cerrar;
 
     @SuppressLint("MissingInflatedId")
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        direccion = findViewById(R.id.direccion);
+        String datos = "Direccion" + getIntent().getStringExtra("et_direccion");
 
         btn_cerrar = findViewById(R.id.btn_cerrar);
         btn_cerrar.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
         LinearLayout cartBtn=findViewById(R.id.cartBtn);
-        @SuppressLint("WrongViewCast") LinearLayout configBtn=findViewById(R.id.configBtn);
+        @SuppressLint("WrongViewCast")
+        LinearLayout configBtn=findViewById(R.id.configBtn);
 
         configBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,ConfigActivity.class)));
 

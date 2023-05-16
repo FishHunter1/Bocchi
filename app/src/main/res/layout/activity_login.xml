@@ -47,7 +47,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_mail"
+            android:id="@+id/et_direccion"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="16dp"
@@ -103,7 +103,7 @@
             android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_registrar"
+            android:id="@+id/btn_guardar"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

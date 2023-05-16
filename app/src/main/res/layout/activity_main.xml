@@ -48,7 +48,7 @@
                     app:layout_constraintTop_toTopOf="@+id/imageView" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/direccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calle KK #69"
@@ -78,7 +78,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/et_mail"
+                    android:id="@+id/et_direccion"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_margin="3dp"
