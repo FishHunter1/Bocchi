@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context="Activity.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/emailfint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Your Email"
@@ -50,7 +50,7 @@
             android:background="@drawable/edittext_background"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/passfint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Your Password"
