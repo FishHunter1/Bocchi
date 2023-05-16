@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,12 +27,17 @@ public class CartActivity extends AppCompatActivity {
     private double tax;
     private ScrollView scrollView;
     private ImageView backBtn;
-
+    private TextView direccion2;
     private Button orderBtn;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+        
+      direccion2 = findViewById(R.id.direccion2);
+      String datos = "Direccion" + getIntent().getStringExtra("et_direccion");
+      direccion2.setText(datos);
 
         managmentCart = new ManagmentCart(this);
 
