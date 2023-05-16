@@ -207,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="Calle KK #69"
+                    android:text="Avenida Cerdo"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                     app:layout_constraintStart_toEndOf="@+id/imageView10"
                     app:layout_constraintTop_toTopOf="@+id/imageView10" />
