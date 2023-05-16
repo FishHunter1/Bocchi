@@ -24,6 +24,9 @@
             android:name=".Activity.RegistrarActivity"
             android:exported="false" />
         <activity
+            android:name=".Activity.ConfigActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.IntroActivity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden">
