@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.project1301.R;
+
 public class recuperarPassActivity extends AppCompatActivity {
 
     @Override
