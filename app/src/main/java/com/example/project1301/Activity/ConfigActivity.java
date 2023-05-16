@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.project1301.R;
 
 public class ConfigActivity extends AppCompatActivity {
-  public EditText et_direccion;
+  public EditText et_direccion,et_direccion2;
   public Button btn_guardar;
 
-  public TextView et_direccion2;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,8 @@ public class ConfigActivity extends AppCompatActivity {
           Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
           intent.putExtra("et_direccion",et_direccion.getText().toString());
           Intent i =new Intent(ConfigActivity.this,CartActivity.class);
-          intent.putExtra("et_direccion2",et_direccion2.getText().toString());
+          i.putExtra("et_direccion2",et_direccion2.getText().toString());
+          startActivity(i);
           startActivity(intent);
         }
       }
