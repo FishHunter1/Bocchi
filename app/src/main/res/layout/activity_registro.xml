@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Login"
+            android:text="Registro"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -88,28 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:background="@drawable/green_button_background"
-            android:text="Ingresar"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Olvidé mi contraseña"
-            android:textAlignment="center"
-            android:textSize="16sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginBtn2"
-            style="@android:style/Widget.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/green_button_background"
-            android:text="Crear una cuenta"
+            android:text="Registrarme"
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
