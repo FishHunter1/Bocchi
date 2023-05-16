@@ -36,7 +36,7 @@ public class ConfigActivity extends AppCompatActivity {
           Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
           intent.putExtra("et_direccion",et_direccion.getText().toString());
           Intent i =new Intent(ConfigActivity.this,CartActivity.class);
-          intent.putExtra("et_direccion2",et_direccion2.getText().toString());
+          i.putExtra("et_direccion2",et_direccion2.getText().toString());
           startActivity(intent);
         }
       }
