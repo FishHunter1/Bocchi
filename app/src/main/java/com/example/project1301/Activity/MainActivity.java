@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         direccion = findViewById(R.id.direccion);
-        String datos = "Direccion" + getIntent().getStringExtra("et_direccion");
+        String datos = "" + getIntent().getStringExtra("et_direccion");
         direccion.setText(datos);
 
         btn_cerrar = findViewById(R.id.btn_cerrar);
