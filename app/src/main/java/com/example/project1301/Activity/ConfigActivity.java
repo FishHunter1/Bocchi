@@ -26,7 +26,6 @@ public class ConfigActivity extends AppCompatActivity {
 
     btn_guardar=findViewById(R.id.btn_guardar);
     et_direccion=findViewById(R.id.et_direccion);
-    et_direccion2=findViewById(R.id.et_direccion2);
 
     et_direccion2=et_direccion;
 
@@ -36,10 +35,11 @@ public class ConfigActivity extends AppCompatActivity {
         if (et_direccion.getText().toString().equals("")){
           Toast.makeText(ConfigActivity.this, "Ingresa tu direccion", Toast.LENGTH_SHORT).show();
         } else{
-          Intent i =new Intent(ConfigActivity.this,CartActivity.class);
-          i.putExtra("et_direccion2",et_direccion2.getText().toString());
           Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
           intent.putExtra("et_direccion",et_direccion.getText().toString());
+          Intent i =new Intent(ConfigActivity.this,CartActivity.class);
+          i.putExtra("et_direccion2",et_direccion2.getText().toString());
+
           startActivity(i);
           startActivity(intent);
         }
