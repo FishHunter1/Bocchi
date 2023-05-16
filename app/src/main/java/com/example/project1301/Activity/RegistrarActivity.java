@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.example.project1301.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -34,7 +35,7 @@ public class RegistrarActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
         awesomeValidation.addValidation(this,R.id.et_mail, Patterns.EMAIL_ADDRESS,R.string.invalid_mail);
-        awesomeValidation.addValidation(this,R.id.et_pass,".{6,}",R.string.invalid_password);
+        awesomeValidation.addValidation(this,R.id.et_pass,".{6,}", R.string.invalid_password);
 
 
         et_mail = findViewById(R.id.et_mail);
