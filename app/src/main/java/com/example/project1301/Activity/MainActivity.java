@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
         LinearLayout cartBtn=findViewById(R.id.cartBtn);
-        LinearLayout configBtn=findViewById(R.id.configBtn);
+        @SuppressLint("WrongViewCast") LinearLayout configBtn=findViewById(R.id.configBtn);
 
         configBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,ConfigActivity.class)));
 
