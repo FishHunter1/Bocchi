@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439509256570",
+    "project_id": "bocchi-e4c68",
+    "storage_bucket": "bocchi-e4c68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439509256570:android:047a5ee52f36ea2793eec3",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439509256570-8a21nktisgcetamndf4unpq2q8d479e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMNJ4eXEr8l1O4bQaWy--IYt8-533kWqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439509256570-8a21nktisgcetamndf4unpq2q8d479e7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
