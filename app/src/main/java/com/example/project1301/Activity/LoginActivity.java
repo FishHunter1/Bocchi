@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -41,6 +42,16 @@ public class LoginActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_registrar);
         btn_recuperar = findViewById(R.id.btn_recuperar);
         btn_registrar = findViewById(R.id.btn_registrar);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if(user != null){
+          irahome();
+        }
 
         firebaseAuth = FirebaseAuth.getInstance();
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
@@ -87,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
       }//fin del oncreate!
-    private void irahome{
+    private void irahome(){
       Intent i = new Intent(this,MainActivity.class);
       i.putExtra("mail",et_mail.getText().toString());
       i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);

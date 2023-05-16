@@ -6,11 +6,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.project1301.Adapter.FoodListAdapter;
 import com.example.project1301.Domain.FoodDomain;
 import com.example.project1301.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -18,13 +22,31 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapterFoodList;
     private RecyclerView recyclerViewFood;
 
+    private Button btn_cerrar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btn_cerrar = findViewById(R.id.btn_cerrar);
+        btn_cerrar.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+            FirebaseAuth.getInstance().signOut();
+            Toast.makeText(MainActivity.this, "Sesion Cerrada", Toast.LENGTH_SHORT).show();
+            gologing();
+          }
+        });
+
         initRecyclerview();
         bottomNavigation();
+    }
+
+    private void gologing(){
+      Intent i = new Intent(this,LoginActivity.class);
+      i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+      startActivity(i);
     }
 
     private void bottomNavigation() {
