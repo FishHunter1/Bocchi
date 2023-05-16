@@ -29,11 +29,9 @@ android {
     namespace 'com.example.project1301'
 }
 
-dependencies {
+dependencies{
 
-    //Dependencias Firebase
-    implementation platform('com.google.firebase:firebase-bom:32.0.0'
-    implementation 'com.google.firebase:firebase-analytics'
+  implementation platform('com.google.firebase:firebase-bom:32.0.0')
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.8.0'
