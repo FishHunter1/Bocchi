@@ -34,7 +34,6 @@ public class ConfigActivity extends AppCompatActivity {
         } else{
           Intent intent = new Intent(ConfigActivity.this,MainActivity.class);
           intent.putExtra("et_direccion",et_direccion.getText().toString());
-
           startActivity(intent);
         }
       }
