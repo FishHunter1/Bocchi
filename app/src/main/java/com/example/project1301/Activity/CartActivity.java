@@ -34,7 +34,7 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
-        
+
       direccion2 = findViewById(R.id.direccion2);
       String datos = "Direccion" + getIntent().getStringExtra("et_direccion");
       direccion2.setText(datos);
