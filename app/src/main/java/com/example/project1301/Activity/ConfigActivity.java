@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.project1301.R;
 
 public class ConfigActivity extends AppCompatActivity {
-  private EditText et_direccion;
-  private Button btn_guardar;
+  public EditText et_direccion;
+  public Button btn_guardar;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
