@@ -96,7 +96,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="118dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
@@ -197,7 +197,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/btn_3" />
+                            app:srcCompat="@drawable/btn_7" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -222,92 +222,6 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:layout_weight="0.25"
-                        android:background="@drawable/category_background">
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/btn_5" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:layout_weight="0.25"
-                        android:background="@drawable/category_background">
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/btn_6" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:layout_weight="0.25"
-                        android:background="@drawable/category_background">
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/btn_7" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="8dp"
-                        android:layout_weight="0.25"
-                        android:background="@drawable/category_background">
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:padding="8dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/btn_8" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -323,7 +237,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Highest rating in town"
+                    android:text="Recomendados"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -333,7 +247,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="View all"
+                    android:text="Ver todos"
                     android:textAlignment="viewEnd"
                     android:textColor="@color/green" />
             </LinearLayout>
@@ -374,20 +288,13 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bottom_btn1" />
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center"
-                        android:textColor="@color/green" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -399,20 +306,13 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bottom_btn2" />
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Cart"
-                        android:textAlignment="center"
-                        android:textColor="#959595" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -423,20 +323,13 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bottom_btn3" />
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Support"
-                        android:textAlignment="center"
-                        android:textColor="#959595" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -447,20 +340,13 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bottom_btn4" />
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Settings"
-                        android:textAlignment="center"
-                        android:textColor="#959595" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>

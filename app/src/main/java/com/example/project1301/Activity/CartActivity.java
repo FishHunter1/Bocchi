@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.project1301.Adapter.CartListAdapter;
 import com.example.project1301.Helper.ChangeNumberItemsListener;
@@ -24,6 +27,7 @@ public class CartActivity extends AppCompatActivity {
     private ScrollView scrollView;
     private ImageView backBtn;
 
+    private Button orderBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,13 @@ public class CartActivity extends AppCompatActivity {
         initList();
         calculateCart();
         setVariable();
+
+        orderBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Toast.makeText(CartActivity.this, "Orden Realizada!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void setVariable() {
@@ -63,8 +74,8 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void calculateCart() {
-        double percentTax = 0.02;
-        double delivery = 10;
+        double percentTax = 0.10;
+        double delivery = 5000;
         tax = Math.round((managmentCart.getTotalFee() * percentTax * 100.0)) / 100.0;
 
         double total = Math.round((managmentCart.getTotalFee() + tax + delivery) * 100.0) / 100;
@@ -85,5 +96,6 @@ public class CartActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scrollView);
         backBtn = findViewById(R.id.backBtn);
         emptyTxt = findViewById(R.id.emptyTxt);
+        orderBtn = findViewById(R.id.orderBtn);
     }
 }

@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private void initRecyclerview() {
         ArrayList<FoodDomain> items=new ArrayList<>();
         items.add(new FoodDomain("Hamburguesa La Bocchi","Es una deliciosa creacion que combina ingredientes de alta calidad en una pan suave y esponjoso. Presenta una jugosa y sabrosa carne de res, sazonada a la perfeccion,acompañada de queso derretido que le aporta un toque cremoso.ademas viene con la salsa de la casa La Bocchida","fast_1",20000,30,120,4.1));
-        items.add(new FoodDomain("Pizza Peperoni","Get a taste of Italy with our delicious Pepperoni Pizza. Made with freshly rolled dough, zesty tomato sauce, mozzarella cheese, and topped with spicy pepperoni slices, this pizza is sure to be a crowd-pleaser. Perfectly baked in a wood-fired oven, it's the perfect choice for a quick lunch or a family dinner."
-                ,"fast_2",10,25,200,5));
-        items.add(new FoodDomain("Vegetable Pizza","Looking for a healthier option? Try our Vegetable Pizza, made with a variety of fresh veggies such as bell peppers, onions, mushrooms, olives, and tomatoes. Topped with mozzarella cheese and a tangy tomato sauce, this pizza is full of flavor and goodness. Perfect for vegetarians and anyone who wants to add more greens to their diet."
-                ,"fast_3",13,30,100,4.5));
+        items.add(new FoodDomain("Pizza Peperoni","Se prepara con una base de masa crujiente y esponjosa, cubierta generosamente con salsa de tomate. Sobre esta salsa se distribuyen rodajas delgadas de pepperoni, un tipo de salami picante, que se dora y se vuelve crujiente al hornearse. El queso mozzarella se derrite sobre el pepperoni, creando una capa de cobertura cremosa y deliciosa."
+                ,"fast_2",10000,25,200,4.8));
+        items.add(new FoodDomain("Pizza Vegana","es una opción deliciosa y saludable para aquellos que siguen una dieta basada en plantas. En lugar de usar ingredientes de origen animal, esta pizza se prepara con una base de masa fina y crujiente, generalmente hecha con harina integral o sin gluten. La salsa de tomate se utiliza como base, ofreciendo un sabor clásico y sabroso."
+                ,"fast_3",13000,30,100,3.5));
 
         recyclerViewFood=findViewById(R.id.view1);
         recyclerViewFood.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
