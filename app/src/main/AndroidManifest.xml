@@ -15,7 +15,10 @@
             android:name=".Activity.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.MainActivity"
+          android:name=".Activity.MainActivity"
+          android:exported="false" />
+        <activity
+            android:name=".Activity.IntroActivity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
