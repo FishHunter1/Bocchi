@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout cartBtn=findViewById(R.id.cartBtn);
         LinearLayout configBtn=findViewById(R.id.configBtn);
 
-        configBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,MainActivity.class)));
+        configBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,ConfigActivity.class)));
 
         homeBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,MainActivity.class)));
 
