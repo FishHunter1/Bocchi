@@ -28,10 +28,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/fast_1" />
+                    app:srcCompat="@drawable/fast_111" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/backBtn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"

@@ -21,6 +21,8 @@ public class DetailActivity extends AppCompatActivity {
     private int numberOrder = 1;
     private ManagmentCart managmentCart;
 
+    private ImageView backBtn2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class DetailActivity extends AppCompatActivity {
 
         initView();
         getBundle();
+        setVariable();
     }
 
     private void getBundle() {
@@ -67,6 +70,9 @@ public class DetailActivity extends AppCompatActivity {
         });
     }
 
+    private void setVariable() {
+        backBtn2.setOnClickListener(v -> finish());
+    }
     private void initView() {
         addToCartBtn = findViewById(R.id.addToCartBtn);
         timeTxt = findViewById(R.id.timeTxt);
@@ -79,6 +85,6 @@ public class DetailActivity extends AppCompatActivity {
         picFood = findViewById(R.id.foodPic);
         startTxt = findViewById(R.id.StarTxt);
         caloryTxt = findViewById(R.id.calTxt);
-
+        backBtn2 = findViewById(R.id.backBtn2);
     }
 }
